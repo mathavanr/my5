@@ -1,0 +1,108 @@
+/* Empty. Add your own CSS if you like /* General */
+
+body {
+  background: #303030;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+}
+
+form {
+  background-color: #E6E6E6;
+  background-repeat: no-repeat;
+  color: #666;
+  width: 420px;
+  padding-top: 5px ;
+  padding-left: 50px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  margin-top: 25px ;
+  margin-left: 450px;
+  border-radius: 2px;
+}
+
+.header {
+  color: #F54327;
+  font-weight: 700;
+  font-size: 28px;
+  padding-bottom: 15px;
+}
+
+.optional {
+  display: inline-block;
+  background: F2F3F5;
+}
+
+#space {
+  padding: 1em;
+}
+
+.footer {
+  background: #F2F2F2;
+  height: 45px;
+  border-radius: 0 0 4px 4px;
+  font-size: 12px;
+  margin-top: 88px;
+  padding-top: 3px;
+}
+
+.footer span {
+  color: #F54327;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: black;
+}
+
+
+
+/* Fields and Button */
+
+.button {
+  width: 80%;
+  height: 42px;
+  margin: 4px 0px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  background: #F2F3F5;
+  background-repeat: no-repeat;
+  background-position: 15px 17px;
+  text-indent: 17%;
+  text-align: left;
+  font-family: inherit;
+  font-size: 16px;
+  color: #737373;
+}
+
+#submit {
+  background-color: #DC143C;
+  font-size: 24px;
+  font-family: inherit;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 8px;
+  text-indent: 0;
+  cursor: pointer;
+  transition: background .3s ease-in-out;
+}
+
+#submit:hover {
+  background-color: #FF7145;
+}
+
+
+
+/* Username & Password Icons */
+
+
+
+
+/* Checkbox */
+
+
