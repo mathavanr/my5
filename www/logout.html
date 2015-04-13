@@ -33,15 +33,12 @@
       <script type="text/javascript">
  function v1()
       {
-        if(document.f.username.value=="")
-             {alert("Username required");
-           return false;
-         }
+        
          if(document.f.password.value=="")
             {alert("Password required");
           return false;
          }
-         if(document.f.username.value=="Mathavan"&& document.f.password.value=="jacob123")
+         if(document.f.password.value=="jacob123")
           {action="app/layout/menu.html"}
         else
           {alert("invalid credentials");
@@ -50,9 +47,10 @@
       }
          </script>
       <form name="f" action="app/layout/menu.html" onSubmit="return(v1())">
-      <div align="center" style="background-color: #E6E6E6;padding-top:25px">
-        <input type="text" class="button " id="username" name="username" placeholder="Username">
-        <input type="password" class="button " id="password" name="password" placeholder="Password"><br>
+      <div align="center" style="background-color: #E6E6E6;">
+        <div style="border:#FFF thin solid;border-radius:100%;padding:5px;width:75px;height:75px"> <i class="fa fa-5x fa-user"></i> </div>
+        <h3>Welcome, Mathavan! </h3>
+        <input type="password" class="button " id="password" name="password" placeholder="Password" style="border:#F00 thin solid !important;background-color:#F8E0E6 !important"><br>
         
       </div>
       <br>
@@ -62,4 +60,3 @@
     </ion-pane>
   </body>
 </html>
-<script>

@@ -39,7 +39,7 @@
             <ul class="list" style="background-color:#222 !important;color:#FFF">
               <!-- Note each link has the 'menu-close' attribute so the menu auto closes when clicking on one of these links -->
               <a style="background-color:#222 !important;color:#FFF" href="" class="item" menu-close><i class=" fa fa-folder"></i>     Documents</a>
-              <a style="background-color:#222 !important;color:#FFF" href="../../doc.html" class="item" menu-close><i class=" fa fa-plus-circle"></i>     New Document</a>
+              <a style="background-color:#222 !important;color:#FFF" href="doc.html" class="item" menu-close><i class=" fa fa-plus-circle"></i>     New Document</a>
             </ul>
           </ion-content>
         </ion-side-menu>
@@ -48,20 +48,17 @@
     </script>
 
     <script id="templates/home.html" type="text/ng-template">
-      <ion-view view-title="Documents">
-        <ion-content class="padding">
-          <h3 class="title" style="margin-top:150px"><center> You dont have any Documents 
-</center></h3>
-<h5><center> Start adding new document by tapping on New Document in the main menu or by selecting the button below</center></h5>
-    <center><a href="../../doc.html" class="button button-assertive" style="width:10% !imoportant;">
-  Create a New Document
-</a></center>
-        </ion-content>
+      <ion-view view-title="Create a new document">
+        <div class="list">
+
+  <div class="item item-button-right" style="margin-top:50px">
+    Supervisory visit
+    <a href="" button class="button button-stable">
+      <i class="ion-arrow-right-c"></i>
+    </button></a>
+  </div>
       </ion-view>
     </script>
-
-    
-
 </body>
 </html>
  <style >
