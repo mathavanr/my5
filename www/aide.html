@@ -1,9 +1,9 @@
 <html ng-app="ionicApp">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, scroll="true"">
 
-    <title>Side Menus</title>
+    <title></title>
 
     <link href="//code.ionicframework.com/nightly/css/ionic.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -17,7 +17,7 @@
     <script id="templates/event-menu.html" type="text/ng-template">
       <ion-side-menus enable-menu-with-back-views="false">
 
-        <ion-side-menu-content>
+        <ion-side-menu-content scroll="true">
           <ion-nav-bar class="bar-assertive">
             <ion-nav-back-button>
             </ion-nav-back-button>
@@ -35,7 +35,7 @@
         </ion-side-menu-content> 
 
         <ion-side-menu side="left" style="background-color:#222 !important;color:#FFF">
-          <ion-content>
+          <ion-content scroll="true">
             <ul class="list" style="background-color:#222 !important;color:#FFF">
               <!-- Note each link has the 'menu-close' attribute so the menu auto closes when clicking on one of these links -->
               <a style="background-color:#222 !important;color:#FFF" href="" class="item" menu-close><i class=" fa fa-folder"></i>     Documents</a>
@@ -48,14 +48,63 @@
     </script>
 
     <script id="templates/home.html" type="text/ng-template">
-      <ion-view view-title="Create a new document">
+      <ion-view view-title="Aide Supervisory Visit">
         <div class="list">
 
-  <div class="item item-button-right" style="margin-top:50px">
-    Supervisory visit
-    <a href="aide.html" button class="button button-stable">
-      <i class="ion-arrow-right-c"></i>
-    </button></a>
+  <div  style="margin-top:50px">
+    <h4>Patient Name</h4>
+    <div>
+  <label class="item item-input" style="border:25%">
+    <input type="text" placeholder="First">
+    <input type="text" placeholder="Middle initial">
+    <input type="text" placeholder="Last">
+  </div>
+  <div  style="margin-top:20px">
+    <h4>Visit Assessment</h4>
+<h6>
+    Supervison Date
+    </h6><div >
+  <label class="item item-input">
+    <input type="Date" placeholder="Today"></label>
+    </div>
+    <h6>
+    Supervisor Name</h6>
+    <label class ="item item-input"><input type="text" placeholder=""></label>
+    <h6>Clinician present at Time of Visit</h6>
+    <div><input type="radio" id="radio13" name="radios" value="all" >
+   <label for="radio13" style="width:25%;"><center>Yes</center></label>
+<input type="radio" id="radio14" name="radios" value="false">
+   <label  for="radio14" style="width:25%;"><center>No</center></label>
+   </div>
+<h6>Notifies Client / Caregiver of Schedule</h6>
+<div><input type="radio" id="radio1" name="radios" value="all" >
+   <label for="radio1"  style="width:16.6%;">Excellent</label>
+<input type="radio" id="radio2" name="radios" value="false">
+   <label for="radio2" style="width:16.6%;">Satisfactory</label>
+<input type="radio" id="radio3" name="radios" value="true">
+   <label for="radio3" style="width:16.6%;">Unsatisfactory</label>
+   <input type="radio" id="radio4" name="radios" value="true">
+   <label for="radio4" style="width:16.6%;">Unknown</label>
+</div>
+<div>
+<h6>Reports for Duty as Assigned</h6>
+   <input type="radio" id="radio5" name="radios" value="all" >
+   <label for="radio5" style="width:16.6%;">Excellent </label>
+<input type="radio" id="radio6" name="radios" value="false">
+   <label for="radio6" style="width:16.6%;">Satisfactory</label>
+<input type="radio" id="radio7" name="radios" value="true">
+   <label for="radio7" style="width:16.6%;">Unsatisfactory</label>
+   <input type="radio" id="radio8" name="radios" value="true">
+   <label for="radio8" style="width:16.6%;">Unknown</label>
+   </div><div><h6>Cooperative with Client and otherwise</h6>
+<input type="radio" id="radio9" name="radios" value="all" >
+   <label for="radio9" style="width:16.6%;">Excellent</label>
+<input type="radio" id="radio10" name="radios" value="false">
+   <label for="radio10" style="width:16.6%;">Satisfactory</label>
+<input type="radio" id="radio11" name="radios" value="true">
+   <label for="radio11" style="width:16.6%;">Unsatisfactory</label>
+   <input type="radio" id="radio12" name="radios" value="true">
+   <label for="radio12" style="width:16.6%;">Unknown</label>
   </div>
       </ion-view>
     </script>
@@ -64,6 +113,26 @@
  <style >
  body {
   cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+input[type=radio] {
+    display:none; 
+    margin:10px;
+}
+ 
+/*
+  Change the look'n'feel of labels (which are adjacent to radiobuttons).
+  Add some margin, padding to label
+*/
+input[type=radio] + label {
+    display:inline-block;
+    margin:-2px;
+    padding: 4px 12px;
+    background-color:#e7e7e7 ;
+    border-color: #ddd;
+}
+input[type=radio]:checked + label { 
+   background-image: none;
+    background-color:#FF0000;
 }
 </style>
 <script>
